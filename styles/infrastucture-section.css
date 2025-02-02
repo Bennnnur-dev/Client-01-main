@@ -1,0 +1,11 @@
+#infrastructure-section{
+    height: 50rem;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+#wavy-outline-3{
+    position: absolute;
+    top: -25rem;
+    fill: var(--color-white);
+}

@@ -1,0 +1,139 @@
+#body-up-section{
+    position: relative;
+    height: 50rem;
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    column-gap: 0.5rem;
+    row-gap: 5rem;
+}
+
+.main-info-container{
+    margin: -4rem 0.5rem 0 0.5rem;
+    height: 45rem;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-primary);
+    z-index: 25;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-type{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: -0.2rem;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    fill: white;
+    background-color: var(--color-dark-blue);
+}
+
+.info-type div{
+    margin-top: 1rem;
+    color: white;
+}
+
+.info-content{
+    margin-top: 2rem;
+    text-align: center;
+    width: 90%;
+    font-size: 2rem;
+}
+
+#wavy-outline-1{
+    position: absolute;
+    top: 20rem;
+    fill: var(--color-white);
+}
+
+.view-more-button{
+    margin: 2rem;
+    padding: 1.2rem 6rem;
+    background-color: var(--color-beige);
+    border: none;
+    box-shadow: var(--shadow-secondary);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media(width <= 1270px){
+    .info-content{
+        font-size: 1.5rem;
+    }
+    .main-info-container{
+        width: 20rem;
+        height: 32rem;
+    }
+    .view-more-button{
+        padding: 1rem 5rem;
+        font-size: 1.2rem;
+    }
+    .info-type{
+        font-size: 2rem;
+        padding: 0;
+    }
+    .info-type div{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .info-type svg{
+        height: 2rem;
+    }
+    #body-up-section{
+        height: 90%;
+    }
+}
+
+@media(width <= 975px){
+    .info-content{
+        font-size: 1.2rem;
+    }
+    .main-info-container{
+        width: 15rem;
+        height: 29rem;
+    }
+    .view-more-button{
+        padding: 0.5rem 4rem;
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    #body-up-section{
+        height: 80%;
+    }
+}
+
+@media(width <= 735px){
+    #container-wrap-align{
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-bottom: 28rem;
+    }
+    #body-up-section{
+        height: 150%;
+    }
+}
+
+@media(width <= 487px){
+    .main-info-container{
+        width: 20rem;
+        height: 22rem;
+    }
+    #body-up-section{
+        height: 170%;
+    }
+    #container-wrap-align{
+        position: static;
+    }
+}

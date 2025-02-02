@@ -1,0 +1,51 @@
+#header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-dark-blue);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-primary);
+    z-index: 100;
+}
+
+#header-ul-flex{
+    padding-left: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.header-li{
+    margin: 0 2rem 0 0;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#header-tabs{
+    margin-right: 3rem;
+}
+
+#header-tabs div{
+    margin-right: 2rem;
+}
+
+#company-info{
+    margin-right: auto;
+}
+
+#company-info div{
+    margin: 0.7rem;
+}
+
+#header-logo{
+    width: 4rem;
+}
