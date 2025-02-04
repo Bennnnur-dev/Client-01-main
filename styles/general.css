@@ -4,6 +4,7 @@ body{
     font-family: Roboto Flex, Arial, Helvetica, sans-serif;
     font-weight: 100;
     padding-top: 4rem;
+    overflow-x: hidden;
 }
 
 :root{

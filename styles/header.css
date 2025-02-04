@@ -30,6 +30,11 @@
     align-items: center;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 #header-tabs{
     margin-right: 3rem;
 }
@@ -48,4 +53,89 @@
 
 #header-logo{
     width: 4rem;
+}
+
+#sidebar{
+    margin: 0;
+    display: none;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    right: 0;
+    background-color: rgba(211, 211, 211, 0.7);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: var(--shadow-primary);
+    z-index: 200;
+    font-size: 1.5rem;
+}
+
+#sidebar-ul{
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 0.5rem;
+}
+
+#sidebar-ul li {
+    margin: 1rem 0 1rem 0rem;
+    list-style: none;
+    position: relative;
+    color: black;
+}
+
+#sidebar-ul li a {
+    color: black;
+}
+
+#exit-sidebar{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+#sidebar-ul li:before{
+    content: "";
+    position: absolute;
+    top: 2rem;
+    height: 0.1rem;
+    width: 300%;
+    background: linear-gradient(90deg ,black 30%,transparent);
+}
+
+#sidebar-button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 3rem;
+}
+
+#sidebar-button svg{
+    margin-top: 0.3rem;
+}
+
+@media(width <= 700px){
+    #header-tabs div{
+        display: none;
+    }
+}
+
+@media(width > 700px){
+    #header-tabs div{
+        display: flex;
+    }
+    #sidebar-button{
+        display: none;
+    }
+}
+
+@media(width <= 400px){
+    #sidebar{
+        left: 0;
+        font-size: 2rem;
+    }
+    #sidebar-ul li:before{
+        top: 2.5rem;
+    }
 }

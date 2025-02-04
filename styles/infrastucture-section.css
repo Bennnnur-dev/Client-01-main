@@ -6,6 +6,7 @@
 
 #wavy-outline-3{
     position: absolute;
-    top: -25rem;
+    height: fit-content;
+    top: -12rem;
     fill: var(--color-white);
 }

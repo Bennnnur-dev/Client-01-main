@@ -1,12 +1,14 @@
 #body-up-section{
     position: relative;
-    height: 50rem;
+    height: fit-content;
+    padding-bottom: 5rem;
     background-color: var(--color-white);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     justify-items: center;
     column-gap: 0.5rem;
     row-gap: 5rem;
+    z-index: 60;
 }
 
 .main-info-container{
@@ -14,7 +16,7 @@
     height: 45rem;
     background-color: var(--color-white);
     box-shadow: var(--shadow-primary);
-    z-index: 25;
+    z-index: 50;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -49,10 +51,12 @@
     font-size: 2rem;
 }
 
-#wavy-outline-1{
+#wavy-outline-2{
     position: absolute;
-    top: 20rem;
+    bottom: -10rem;
     fill: var(--color-white);
+    height: fit-content;
+    transform: rotate(180deg);
 }
 
 .view-more-button{
@@ -90,9 +94,6 @@
     .info-type svg{
         height: 2rem;
     }
-    #body-up-section{
-        height: 90%;
-    }
 }
 
 @media(width <= 975px){
@@ -108,9 +109,6 @@
         font-size: 1rem;
         margin-top: 0rem;
     }
-    #body-up-section{
-        height: 80%;
-    }
 }
 
 @media(width <= 735px){
@@ -118,10 +116,9 @@
         position: relative;
         left: 50%;
         right: 50%;
-        margin-bottom: 28rem;
     }
-    #body-up-section{
-        height: 150%;
+    #wavy-outline-2{
+        height: 15rem;
     }
 }
 
@@ -129,9 +126,6 @@
     .main-info-container{
         width: 20rem;
         height: 22rem;
-    }
-    #body-up-section{
-        height: 170%;
     }
     #container-wrap-align{
         position: static;

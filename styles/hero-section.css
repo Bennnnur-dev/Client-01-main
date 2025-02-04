@@ -6,6 +6,12 @@
     height: 40rem;
 }
 
+#wavy-outline-1{
+    position: absolute;
+    top: 20rem;
+    fill: var(--color-white);
+}
+
 #hero-section-img-container{
     position: absolute;
     left: 0;
@@ -61,8 +67,11 @@
 }
 
 @media(width <= 1100px){
+    #hero-section{
+        height: 35rem;
+    }
     #hero-section-img-container img{
-        object-position: -10rem 0rem;
+        object-position: 0rem 0rem;
     }
     #hero-section-title{
         font-size: 4rem;
@@ -70,11 +79,13 @@
     #hero-section-subtitle{
         font-size: 1.5rem;
     }
-    #hero-section-title-bg{
-        /* width: 18rem; */
-    }
     #hero-section-CTA{
         padding: 1rem 3rem;
         font-size: 1rem;
+    }
+    #wavy-outline-1{
+        position: absolute;
+        top: 15rem;
+        fill: var(--color-white);
     }
 }
