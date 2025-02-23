@@ -8,11 +8,11 @@ body{
 }
 
 :root{
-    --color-dark-blue: #243a49;
-    --color-cyan: #106973;
-    --color-light-blue: #82a2a4;
-    --color-beige: #A67041;
-    --color-white: #F2F2F2;
+    --color-dark-blue: rgb(36, 58, 73);
+    --color-cyan: rgb(16, 105, 115);
+    --color-light-blue: rgb(157, 199, 202);
+    --color-beige: rgb(166, 112, 65);
+    --color-white: rgb(242, 242, 242);
 
     --shadow-primary: 0 0px 10px rgba(0, 0, 0, 1);
     --shadow-secondary: 3px 3px 5px rgba(0, 0, 0, 0.5);

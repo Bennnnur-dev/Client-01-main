@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/summary-section.css">
     <link rel="stylesheet" href="./styles/infrastucture-section.css">
+    <link rel="stylesheet" href="./styles/service-section.css">
 
     <!-- Scripts -->
      <script defer src="./scripts/sidebar.js"></script>
+     <script defer src="./scripts/services.js"></script>
 </head>
 <body>
     <header>
@@ -51,15 +53,15 @@
 
     <section id="hero-section">
         <div id="hero-section-title-bg">
-            <h1 id="hero-section-title">Yachting Reinvented</h1>
+            <h1 id="hero-section-title">Management Reinvented</h1>
             <h2 id="hero-section-subtitle">Discover a new way of managing vessels</h1>
             <button id="hero-section-CTA">Our Services</button>
         </div>
         <div id="hero-section-img-container">
-            <img src="./images/thumbnails/shipping.jpg" alt="Thumbnail">
+            <img src="./images/thumbnails/Nature-Images-hd.jpg" alt="Thumbnail">
         </div>
 
-        <svg width="100%" height="100%" id="wavy-outline-1" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 205.71428571428572,192.85714285714286 822.8571428571429,171.42857142857144 1440,150 L 1440,400 L 0,400 Z" fill-opacity="1"></path></svg>
+        <svg id="wavy-outline-1" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 205.71428571428572,192.85714285714286 822.8571428571429,171.42857142857144 1440,150 L 1440,400 L 0,400 Z" fill-opacity="1"></path></svg>
     </section>
 
     <section id="body-up-section">
@@ -108,8 +110,49 @@
         </div>
     </section>
 
+    <section id="service-section">
+        <svg width="100%" height="100%" id="wavy-outline-4" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 102.42105263157893,163.89473684210526 204.84210526315786,177.78947368421055 287,193 C 369.15789473684214,208.21052631578945 431.0526315789474,224.73684210526318 529,211 C 626.9473684210526,197.26315789473682 760.9473684210525,153.26315789473682 876,150 C 991.0526315789475,146.73684210526318 1087.1578947368423,184.21052631578948 1178,191 C 1268.8421052631577,197.78947368421052 1354.4210526315787,173.89473684210526 1440,150 L 1440,400 L 0,400 Z"></path></svg>
+        
+        <div id="right"></div>
+        <div id="left"></div>
+
+        <div id="scrolling-items-container">
+        </div>
+
+        <div id="dots-container">
+            <div class="dot">
+                <svg fill="#000000" width="300%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"/></svg>
+            </div>
+            <div class="dot">
+                <svg fill="#000000" width="300%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"/></svg>
+            </div>
+            <div class="dot">
+                <svg fill="#000000" width="300%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"/></svg>
+            </div>
+            <div class="dot">
+                <svg fill="#000000" width="300%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"/></svg>
+            </div>
+            <div class="dot">
+                <svg fill="#000000" width="100%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.8 10a2.2 2.2 0 0 0 4.4 0 2.2 2.2 0 0 0-4.4 0z"/></svg>
+            </div>
+        </div>
+    </section>
+
     <section id="infrastructure-section">
         <svg width="100%" height="100%" id="wavy-outline-3" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 139.06666666666666,155.06666666666666 278.1333333333333,160.13333333333335 422,171 C 565.8666666666667,181.86666666666665 714.5333333333333,198.53333333333333 885,196 C 1055.4666666666667,193.46666666666667 1247.7333333333333,171.73333333333335 1440,150 L 1440,400 L 0,400 Z"></path></svg>
+        <div id="quote-container">
+            <q id="quote-text">A man's feet must be planted in his country, but his eyes should survey the world.
+                <div id="quote-container-top">
+                    <div class="quote"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg></div>
+                    <div class="outline"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg></div>
+                </div>
+                <div id="quote-container-bottom">
+                    <div class="quote"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg></div>
+                    <div class="outline"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg></div>
+                </div>
+                <div id="author">George Santayana <br><span>Spanish-American philosopher</span></div>
+            </q>
+        </div>
     </section>
 </body>
 </html>

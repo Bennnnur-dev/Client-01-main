@@ -1,7 +1,6 @@
 #body-up-section{
     position: relative;
-    height: fit-content;
-    padding-bottom: 5rem;
+    padding-bottom: clamp(4em, 2vw, 2em);
     background-color: var(--color-white);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -9,11 +8,11 @@
     column-gap: 0.5rem;
     row-gap: 5rem;
     z-index: 60;
+    font-size: clamp(1rem, 2vw, 3rem);
 }
 
 .main-info-container{
     margin: -4rem 0.5rem 0 0.5rem;
-    height: 45rem;
     background-color: var(--color-white);
     box-shadow: var(--shadow-primary);
     z-index: 50;
@@ -26,17 +25,17 @@
 .info-type{
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     margin-top: -0.2rem;
     width: 100%;
-    font-size: 3rem;
+    height: clamp(1rem, 30vw, 3em);
     font-weight: 500;
     display: flex;
     align-items: center;
     flex-direction: column;
     fill: white;
     background-color: var(--color-dark-blue);
+    font-size: clamp(1.5rem, 3vw, 4rem);
 }
 
 .info-type div{
@@ -44,34 +43,52 @@
     color: white;
 }
 
+.info-type svg{
+    width: clamp(1em, 2vh, 3em);
+}
+
 .info-content{
     margin-top: 2rem;
     text-align: center;
     width: 90%;
-    font-size: 2rem;
 }
 
 #wavy-outline-2{
     position: absolute;
-    bottom: -10rem;
+    bottom: clamp(-15em, -14vw, -5em);
     fill: var(--color-white);
-    height: fit-content;
+    height: clamp(2em, 27.5vw, 40em);
     transform: rotate(180deg);
 }
 
 .view-more-button{
     margin: 2rem;
-    padding: 1.2rem 6rem;
+    padding: clamp(1em, 1vw, 2em) clamp(2em, 4vw, 5em);
     background-color: var(--color-beige);
     border: none;
     box-shadow: var(--shadow-secondary);
     color: white;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1vw, 3rem);
     font-weight: 600;
     cursor: pointer;
 }
 
-@media(width <= 1270px){
+@media(width <= 735px){
+    #container-wrap-align{
+        position: relative;
+        left: 50%;
+        right: 50%;
+    }
+}
+
+@media(width <= 487px){
+    #container-wrap-align{
+        position: static;
+    }
+}
+
+/*@media(width <= 1270px){
+    
     .info-content{
         font-size: 1.5rem;
     }
@@ -96,7 +113,7 @@
     }
 }
 
-@media(width <= 975px){
+/* @media(width <= 975px){
     .info-content{
         font-size: 1.2rem;
     }
@@ -111,23 +128,4 @@
     }
 }
 
-@media(width <= 735px){
-    #container-wrap-align{
-        position: relative;
-        left: 50%;
-        right: 50%;
-    }
-    #wavy-outline-2{
-        height: 15rem;
-    }
-}
-
-@media(width <= 487px){
-    .main-info-container{
-        width: 20rem;
-        height: 22rem;
-    }
-    #container-wrap-align{
-        position: static;
-    }
-}
+*/

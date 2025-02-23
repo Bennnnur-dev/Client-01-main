@@ -1,0 +1,158 @@
+#service-section{
+    height: clamp(30rem, 40vw, 80rem);
+    width: 100%;
+    background-color: var(--color-light-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#wavy-outline-4{
+    position: absolute;
+    top: clamp(-40em, -18vw, -2em);
+    fill: var(--color-light-blue);
+    height: clamp(2em, 27.5vw, 65em);
+}
+
+#scrolling-items-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: brown; */
+    flex-wrap: nowrap;
+}
+
+.view-container{
+    position: absolute;
+    z-index: 50;
+    margin-top: 5vh;
+    width: clamp(18rem, 30vw, 60rem);
+    height: clamp(30rem, 45vw, 70rem);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-secondary);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+/* .view-img-container{
+    width: 100%;
+} */
+
+.view-img-container img{
+    width: 100%;
+}
+
+.view-title{
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    padding: 3vh 3vw 3vh 2vw;
+    background-color: var(--color-beige);
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 500;
+}
+
+.view-content{
+    margin: 1rem 1rem;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    text-align: center;
+}
+
+.view-more-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-align{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 1rem;
+}
+
+#left{
+    /* background-color: blueviolet; */
+    position: absolute;
+    top: 0;
+    bottom: -5rem;
+    left: 0;
+    right: clamp(13rem, 60vw, 130rem);
+    z-index: 90;
+    cursor: pointer;
+}
+
+#right{
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    bottom: -5rem;
+    left: clamp(13rem, 60vw, 130rem);
+    right: 0;
+    z-index: 90;
+    cursor: pointer;
+}
+
+#dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 6rem;
+    z-index: 91;
+    position: absolute;
+    bottom: -16rem;
+}
+
+.dot{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.dot svg{
+    width: 100%;
+    fill: lightgray;
+}
+
+.dot-active svg{
+    fill: white;
+    transform: scale(1.25);
+}
+
+/* .directional-button{
+    width: clamp(4rem, 7vw, 7rem);
+    height: clamp(4rem, 7vw, 7rem);
+    position: absolute;
+    bottom: 50%;
+    background: none;
+    border: solid 0.1rem white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 50;
+    outline: none;
+}
+
+.directional-button:hover{
+    opacity: 0.8;
+}
+
+.directional-button svg{
+    width: 100%;
+    height: 100%;
+}
+
+#arrow-left{
+    right: clamp(10rem, 20vw, 50%);
+}
+
+#arrow-right{
+    left: clamp(10rem, 20vw, 50%);
+}
+
+#arrow-left svg{
+    transform: rotate(180deg);
+} */
