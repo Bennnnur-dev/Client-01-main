@@ -41,6 +41,12 @@ dots[index].classList.add('dot-active') //attributes a starting class
 
 generateContainers()
 
+dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+        chooseDirection(dot)
+    })
+})
+
 leftBackground.addEventListener('click', () => {
     navigateByIndex('left')
 })
@@ -48,6 +54,10 @@ leftBackground.addEventListener('click', () => {
 rightBackground.addEventListener('click', () => {
     navigateByIndex('right')
 })
+
+function chooseDirection(dot){
+    
+}
 
 function navigateByIndex(direction){
     const containers = document.querySelectorAll('.view-container')
@@ -69,48 +79,40 @@ function navigateByIndex(direction){
         }
         dots[index].classList.add('dot-active')
     }
-    animateRight(index, containers)
+    animate(index, containers)
 }
 
-function animateRight(index, containers){
-    const firstElement = containers[index - 2 || 4]
-    const previousElement = containers[index - 1]
-    const targetElement = containers[index]
-    const nextElement = containers[index + 1]
-    const lastElement = containers[index + 2 || 0]
+function addDotButton(index){
+    const leftDot = dots[index - 1]
+    const rightDot = dots[index + 1]
+}
 
-    const elementStyles = [...containers].map(container => {
-        return {
-            transform: getComputedStyle(container).getPropertyValue('transform'),
-            zIndex: getComputedStyle(container).getPropertyValue('z-index'),
-            filter: getComputedStyle(container).getPropertyValue('filter'),
-            container
-        }
-    })
+function animate(index, containers){
+    const targetElement = containers[index]
+    const middleElement = [...containers].filter(container => getComputedStyle(container).getPropertyValue('z-index') === '30')[0]
+    
+    const targetComputedStyles = getComputedStyle(targetElement)
+    const middleComputedStyles = getComputedStyle(middleElement)
+    const targetStyles = [
+        {
+            transform: targetComputedStyles.getPropertyValue('transform'),
+            zIndex: targetComputedStyles.getPropertyValue('z-index'),
+        },
+        {
+            transform: middleComputedStyles.getPropertyValue('transform'),
+            zIndex: middleComputedStyles.getPropertyValue('z-index'),
+        },
+    ]
+
+    middleElement.style.transform = `${targetStyles[0].transform}`
+    middleElement.style.zIndex = `${targetStyles[0].zIndex}`
+    middleElement.style.filter = 'brightness(80%)'
+
+    targetElement.style.transform = `matrix(1, 0, 0, 1, 0, 0)`
+    targetElement.style.zIndex = 30
+    targetElement.style.filter = 'brightness(100%)'
 
     console.log(index)
-
-    firstElement.style.transform = `${elementStyles[index + 1].transform}`
-    firstElement.style.zIndex = `${elementStyles[index + 1].zIndex}`
-    firstElement.style.filter = `${elementStyles[index + 1].filter}`
-
-    previousElement.style.transform = `${elementStyles[index - 2].transform}`
-    previousElement.style.zIndex = `${elementStyles[index - 2].zIndex}`
-    previousElement.style.filter = `${elementStyles[index - 2].filter}`
-
-    targetElement.style.transform = "matrix(1, 0, 0, 1, 0, 0)"
-    targetElement.style.zIndex = "30"
-    targetElement.style.filter = "brightness(100%)"
-
-    nextElement.style.transform = `${elementStyles[index].transform}`
-    nextElement.style.zIndex = `${elementStyles[index].zIndex}`
-    nextElement.style.filter = `${elementStyles[index].filter}`
-
-    lastElement.style.transform = `${elementStyles[index + 2].transform}`
-    lastElement.style.zIndex = `${elementStyles[index + 2].zIndex}`
-    lastElement.style.filter = `${elementStyles[index + 2].filter}`
-
-    console.log(elementStyles)
 }
 
 function generateContainers(){
@@ -172,3 +174,37 @@ function generateContainers(){
     // middleElement.style.filter = 'brightness(80%)'
 
     // console.log(targetStyles)
+
+
+
+
+    // firstElement.style.transform = `${elementStyles[index + 1].transform}`
+    // firstElement.style.zIndex = `${elementStyles[index + 1].zIndex}`
+    // firstElement.style.filter = `${elementStyles[index + 1].filter}`
+
+    // previousElement.style.transform = `${elementStyles[index - 2].transform}`
+    // previousElement.style.zIndex = `${elementStyles[index - 2].zIndex}`
+    // previousElement.style.filter = `${elementStyles[index - 2].filter}`
+
+    // targetElement.style.transform = "matrix(1, 0, 0, 1, 0, 0)"
+    // targetElement.style.zIndex = "30"
+    // targetElement.style.filter = "brightness(100%)"
+
+    // nextElement.style.transform = `${elementStyles[index].transform}`
+    // nextElement.style.zIndex = `${elementStyles[index].zIndex}`
+    // nextElement.style.filter = `${elementStyles[index].filter}`
+
+    // lastElement.style.transform = `${elementStyles[index + 2].transform}`
+    // lastElement.style.zIndex = `${elementStyles[index + 2].zIndex}`
+    // lastElement.style.filter = `${elementStyles[index + 2].filter}`
+
+
+
+    // const elementStyles = [...containers].map(container => {
+    //     return {
+    //         transform: getComputedStyle(container).getPropertyValue('transform'),
+    //         zIndex: getComputedStyle(container).getPropertyValue('z-index'),
+    //         filter: getComputedStyle(container).getPropertyValue('filter'),
+    //         container
+    //     }
+    // })

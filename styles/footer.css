@@ -1,0 +1,99 @@
+footer{
+    height: 30rem;
+    background-color: var(--color-dark-blue);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#wavy-outline-5{
+    position: absolute;
+    top: clamp(-40em, -10vw, -2em);
+    fill: var(--color-beige);
+    height: clamp(2em, 27.5vw, 65em);
+    transform: rotate(180deg);
+}
+
+footer article{
+    /* background-color: red; */
+    position: absolute;
+    top: 10vw;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer article ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-title{
+    color: rgb(103, 103, 103);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    margin-bottom: 1.5rem;
+}
+
+.list-title:before{
+    content: "";
+    width: 2%;
+    height: 0.1rem;
+    margin-top: 2rem;
+    position: absolute;
+    background-color: rgb(103, 103, 103);
+    opacity: 0.5;
+}
+
+.list-content{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#company-main-info{
+    width: 25vw;
+}
+
+#footer-company-li{
+    margin-top: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+#footer-company-li:before{
+    content: "";
+    width: 10%;
+    height: 0.1rem;
+    background-color: var(--color-white);
+    position: absolute;
+    bottom: -0.5rem;
+}
+
+#company-description-li{
+    color: white;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+hr{
+    margin-bottom: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#more-info-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+#more-info-container div{
+    margin: 1.5rem;
+}

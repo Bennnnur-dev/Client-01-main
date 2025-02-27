@@ -12,7 +12,7 @@
     padding-left: 5%;
     color: white;
     width: 50%;
-    z-index: 50;
+    z-index: 7;
 }
 
 #summary-container h2{
@@ -55,23 +55,14 @@
     object-fit: cover;
 }
 
-.view-more-href{
-    color: white;
-    font-size: clamp(1rem, 2vw, 3rem);
-    text-decoration: none;
-    position: absolute;
-    font-weight: 400;
-    z-index: 50;
-}
-
-.view-more-href:before{
+/* .view-more-href:before{
     content: "";
     position: absolute;
     height: 0.1rem;
     width: 100%;
     background-color: white;
     bottom: -0.5rem;
-}
+} */
 
 @media(width <= 1100px){
     #summary-image-container{

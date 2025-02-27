@@ -1,28 +1,52 @@
 #service-section{
     height: clamp(30rem, 40vw, 80rem);
     width: 100%;
-    background-color: var(--color-light-blue);
+    background-color: var(--color-white);
     position: relative;
     display: flex;
     justify-content: center;
 }
 
+#service-content{
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    height: fit-content;
+    z-index: 10;
+}
+
+#service-text{
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5vw;
+}
+
+#service-text h2{
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: 700;
+}
+
+#service-text p{
+    font-size: clamp(1rem, 2vw, 4rem);
+
+}
+
 #wavy-outline-4{
     position: absolute;
     top: clamp(-40em, -18vw, -2em);
-    fill: var(--color-light-blue);
+    fill: var(--color-white);
     height: clamp(2em, 27.5vw, 65em);
+    z-index: 7;
 }
 
 #scrolling-items-container{
     position: absolute;
-    right: 0;
-    left: 0;
+    right: 10%;
     top: 0;
-    bottom: 0;
+    height: clamp(20rem, 50vw, 100rem);
     display: flex;
     justify-content: space-around;
-    /* background-color: brown; */
     flex-wrap: nowrap;
 }
 
@@ -76,22 +100,20 @@
 }
 
 #left{
-    /* background-color: blueviolet; */
     position: absolute;
     top: 0;
     bottom: -5rem;
     left: 0;
-    right: clamp(13rem, 60vw, 130rem);
+    right: clamp(13rem, 35vw, 130rem);
     z-index: 90;
     cursor: pointer;
 }
 
 #right{
-    /* background-color: red; */
     position: absolute;
     top: 0;
     bottom: -5rem;
-    left: clamp(13rem, 60vw, 130rem);
+    left: clamp(13rem, 65vw, 130rem);
     right: 0;
     z-index: 90;
     cursor: pointer;
@@ -104,8 +126,7 @@
     width: 30vw;
     height: 6rem;
     z-index: 91;
-    position: absolute;
-    bottom: -16rem;
+    /* background-color: brown; */
 }
 
 .dot{
@@ -121,6 +142,54 @@
 .dot-active svg{
     fill: white;
     transform: scale(1.25);
+}
+
+@media(width <= 600px){
+    #dots-container{
+        bottom: -0rem;
+        position: absolute;
+    }
+}
+
+@media(width > 600px){
+    #dots-container{
+        margin-top: auto;
+        margin-bottom: -10em;
+    }
+}
+
+@media(width > 1050px){
+    #dots-container{
+        margin-bottom: -5vw;
+    }
+}
+
+@media(width >= 1800px){
+    #dots-container{
+        margin-bottom: -1vw;
+    }
+}
+
+@media(width >= 2100px){
+    #dots-container{
+        margin-bottom: -18vw;
+    }
+}
+
+@media(width <= 700px){
+    #service-text{
+        display: none;
+    }
+    #scrolling-items-container{
+        left: 50%;
+        right: 50%;
+    }
+    #left{
+        right: 50%;
+    }
+    #right{
+        left: 50%;
+    }
 }
 
 /* .directional-button{

@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: clamp(25em, 35vw, 50em);
+    height: clamp(25em, 45vw, 50em);
 }
 
 #wavy-outline-1{
@@ -31,7 +31,7 @@
 #hero-section-title-bg{
     width: 70%;
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 3%;
     height: 20rem;
     z-index: 20;
@@ -45,14 +45,14 @@
     margin: 0;
     font-weight: 500;
     color: white;
-    font-size: clamp(3rem, 4vw, 7rem);
+    font-size: clamp(2rem, 4vw, 7rem);
 }
 
 #hero-section-subtitle{
     margin: 0;
     font-weight: 200;
     color: white;
-    font-size: clamp(1.2rem, 2vw, 4rem);
+    font-size: clamp(1rem, 2vw, 4rem);
 }
 
 #hero-section-CTA{
@@ -65,4 +65,11 @@
     font-size: clamp(1rem, 1vw, 3rem);
     box-shadow: var(--shadow-secondary);
     cursor: pointer;
+}
+
+@media(width <= 500px){
+    #hero-section-title-bg{
+        top: 5%;
+        width: 100%
+    }
 }
