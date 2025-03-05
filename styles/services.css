@@ -1,0 +1,38 @@
+.hero-background{
+    background-color: var(--color-dark-blue);
+    left: 0;
+    height: 13rem;
+}
+
+.hero-title-color{
+    padding-left: 5%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    background-color: var(--color-white);
+    height: 200rem;
+    display: flex;
+    justify-content: center;
+}
+
+main article{
+    width: 50vw;
+}
+
+.service-information{
+}
+
+.service-info-title{
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
+.service-information p{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+#service-top{
+    margin-top: 10vw;
+}

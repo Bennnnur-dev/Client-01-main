@@ -1,5 +1,5 @@
 const header = document.getElementById('header-nav')
-const topMarker = document.getElementById('hero-section-title-bg')
+const topMarker = document.querySelector('.hero-section-title-bg')
 const background = document.getElementById('header-background')
 
 document.addEventListener('DOMContentLoaded', checkDistance)
