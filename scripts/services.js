@@ -2,7 +2,7 @@ const services = [
     {
         name: 'Technical Management',
         img: '/images/thumbnails/shipping.jpg',
-        content: '',
+        content: 'Understanding the needs of complex technical systems ranging from the most advanced engine room automation systems to high end VSAT communication arays provides reassurance to owners that their assets are being properly and efficiently maintained. ',
         href: ''
     },
     {
@@ -14,13 +14,13 @@ const services = [
     {
         name: 'Management Service',
         img: '/images/thumbnails/shipping.jpg',
-        content: '',
+        content: 'Transparent and efficient managements solutions for your vessel or fleet. CYMS can provide a standard framework management package or tailor a bespoke solution meeting the most demanding of expectations.',
         href: ''
     },
     {
         name: 'Recruitment Service',
         img: '/images/thumbnails/shipping.jpg',
-        content: '',
+        content: "Using CYMS's proven candidate-rating system helps to quantify the strengths and weaknesses of each potential new crew member.",
         href: ''
     },
     {
@@ -135,7 +135,7 @@ function generateContainers(){
                 <img src="${service.img}" alt="Service image">
             </div>
             <div class="view-title">${service.name}</div>
-            <div class="view-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eveniet consequatur, dignissimos optio quidem dolorum consequuntur! Quam nihil, vero nesciunt tempore optio sed minus reprehenderit voluptas at praesentium atque, hic reiciendis odit voluptatem, dolorem nam maxime. Dicta eius maxime est.</div>
+            <div class="view-content">${service.content}</div>
             <div class="button-align">
                 <button class="view-more-button view-display">
                     <a href="${service.href}">View more</a>

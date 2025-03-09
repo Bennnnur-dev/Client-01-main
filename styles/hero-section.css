@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: clamp(25em, 45vw, 50em);
+    height: clamp(30em, 45vw, 50em);
 }
 
 #wavy-outline-1{

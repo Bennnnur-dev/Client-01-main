@@ -66,8 +66,6 @@
 }
 
 #quote-text{
-    text-align: center;
-    margin-top: 4rem;
     position: relative;
     width: 90%;
     color: black;
@@ -81,7 +79,8 @@
     font-weight: 500;
     margin-top: 3rem;
     text-align: left;
-
+    left: 0;
+    position: absolute;
 }
 
 #author span{

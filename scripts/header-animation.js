@@ -11,11 +11,12 @@ function checkDistance(){
     const markerY = Math.round(topMarker.getBoundingClientRect().y)
     const headerY = Math.round(header.getBoundingClientRect().y)
 
-    if (headerY - markerY > -10) return background.style.transform = 'translateY(0vw)'
-    background.style.transform = 'translateY(-200%)'
-}
+    if (headerY - markerY > -10) {
+        background.style.transform = 'translateY(0vw)'
+        scrollTab.style.backgroundColor = 'var(--color-dark-blue)'
+        return
+    }
 
-serviceButton.addEventListener('hover', () => {
-    scrollTab.style.display = 'flex'
-    console.log('z')
-})
+    background.style.transform = 'translateY(-200%)'
+    scrollTab.style.backgroundColor = 'rgba(0, 0, 0, 0.3)'
+}
