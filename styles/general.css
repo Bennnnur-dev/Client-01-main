@@ -1,28 +1,27 @@
-body{
-    margin: 0;
-    height: 100vh;
-    font-family: Roboto Flex, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto Flex, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
 }
 
-:root{
-    --color-dark-blue: rgb(22, 36, 45);
-    --color-cyan: rgb(25, 70, 75);
-    --color-light-blue: rgb(157, 199, 202);
-    --color-beige: rgb(132, 92, 58);
-    --color-white: rgb(242, 242, 242);
+:root {
+  --color-dark-blue: rgb(22, 36, 45);
+  --color-cyan: rgb(25, 70, 75);
+  --color-light-blue: rgb(157, 199, 202);
+  --color-beige: rgb(51, 73, 111);
+  --color-white: rgb(242, 242, 242);
 
-    --shadow-primary: 0 0px 10px rgba(0, 0, 0, 1);
-    --shadow-secondary: 3px 3px 5px rgba(0, 0, 0, 0.5);
-
+  --shadow-primary: 0 0px 10px rgba(0, 0, 0, 1);
+  --shadow-secondary: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-a{
-    color: white;
-    text-decoration: none;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
