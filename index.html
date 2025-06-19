@@ -52,14 +52,30 @@
                     </button>
                 </li>
             </ul>
-        </nav>
-        <nav id="sidebar">
-            <ul id="sidebar-ul">
-                <button id="exit-sidebar">X</button>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/link">Contact</a></li>
-            </ul>
+
+            <nav id="sidebar">
+                <ul id="sidebar-ul">
+                    <button id="exit-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                    </button>
+                    <li id="service-li">Services
+                        <ul id="sidebar-services">
+                            <li><a id="company-title" href="/">Technical Management</a></li>
+                            <li><a id="company-title" href="/">Project Management</a></li>
+                            <li><a id="company-title" href="/management.html">Management Service</a></li>
+                            <li><a id="company-title" href="/">Recruitment Service</a></li>
+                            <li><a id="company-title" href="/">Audit Service</a></li>
+                        </ul>
+                        <hr>
+                    </li>
+                    <li><a href="/about.html">About</a>
+                        <hr>
+                    </li>
+                    <li><a href="/contact.html">Contact</a>
+                        <hr>
+                    </li>
+                </ul>
+            </nav>
         </nav>
     </header>
 
@@ -67,7 +83,7 @@
         <div class="hero-section-title-bg">
             <h1 class="hero-section-title">Marine Management Reinvented</h1>
             <h2 class="hero-section-subtitle">Discover a new way of managing vessels</h1>
-            <button id="hero-section-CTA">Our Services</button>
+            <button id="hero-section-CTA"><a href="#service-section">Our Services</a></button>
         </div>
         <div class="hero-section-img-container">
             <img src="./images/thumbnails/Nature-Images-hd.jpg" alt="Thumbnail">

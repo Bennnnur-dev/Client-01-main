@@ -67,6 +67,14 @@
     cursor: pointer;
 }
 
+#hero-section-CTA a {
+    text-decoration: none;
+}
+
+#hero-section-CTA:hover{
+    transform: scale(1.05);
+}
+
 @media(width <= 500px){
     #hero-section-title-bg{
         top: 5%;
