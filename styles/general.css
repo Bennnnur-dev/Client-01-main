@@ -2,15 +2,19 @@ body {
   margin: 0;
   height: 100vh;
   font-family: Roboto Flex, Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
   --color-dark-blue: rgb(22, 36, 45);
   --color-cyan: rgb(25, 70, 75);
   --color-light-blue: rgb(157, 199, 202);
-  --color-beige: rgb(51, 73, 111);
+  --color-beige: rgb(132, 92, 58);
   --color-white: rgb(242, 242, 242);
 
   --shadow-primary: 0 0px 10px rgba(0, 0, 0, 1);
