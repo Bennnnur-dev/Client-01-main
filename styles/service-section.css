@@ -1,227 +1,175 @@
-#service-section{
-    height: clamp(30rem, 40vw, 80rem);
-    width: 100%;
-    background-color: var(--color-white);
-    position: relative;
-    display: flex;
-    justify-content: center;
+#service-section {
+  height: clamp(30rem, 40vw, 80rem);
+  width: 100%;
+  background-color: var(--color-beige);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20vw;
 }
 
-#service-content{
-    position: absolute;
-    right: 10%;
-    left: 10%;
-    height: fit-content;
-    z-index: 10;
+#service-content {
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  height: fit-content;
+  z-index: 10;
 }
 
-#service-text{
-    width: 30vw;
-    height: 30vw;
-    margin-top: 5vw;
+#service-text {
+  width: 30vw;
+  height: 30vw;
+  margin-top: 5vw;
+  color: white;
 }
 
-#service-text h2{
-    margin: 0;
-    font-size: clamp(1.5rem, 4vw, 4rem);
-    font-weight: 700;
+#service-text h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  font-weight: 700;
 }
 
-#service-text p{
-    font-size: clamp(1rem, 2vw, 4rem);
-
+#service-text p {
+  font-size: clamp(1rem, 2vw, 4rem);
+  text-align: justify;
 }
 
-#wavy-outline-4{
-    position: absolute;
-    top: clamp(-40em, -18vw, -2em);
-    fill: var(--color-white);
-    height: clamp(2em, 27.5vw, 65em);
-    z-index: 7;
+#wavy-outline-4 {
+  position: absolute;
+  top: clamp(-40em, -18vw, -2em);
+  fill: var(--color-beige);
+  height: clamp(2em, 27.5vw, 65em);
+  z-index: 7;
 }
 
-#scrolling-items-container{
-    position: absolute;
-    right: 10%;
-    top: 0;
-    height: clamp(20rem, 50vw, 100rem);
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+#items-container {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.view-container{
-    position: absolute;
-    z-index: 50;
-    margin-top: 5vh;
-    width: clamp(18rem, 30vw, 60rem);
-    height: clamp(30rem, 45vw, 70rem);
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-secondary);
-    transition: transform 0.5s, filter 0.5s;
+#scrolling-items-container {
+  height: clamp(30rem, 45vw, 70rem);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: clamp(18rem, 30vw, 60rem);
 }
 
-/* .view-img-container{
-    width: 100%;
-} */
-
-.view-img-container img{
-    width: 100%;
+.view-container {
+  position: absolute;
+  z-index: 50;
+  margin-top: 5vh;
+  width: clamp(18rem, 30vw, 60rem);
+  height: clamp(30rem, 45vw, 70rem);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-secondary);
+  transition: transform 0.5s, filter 0.5s;
 }
 
-.view-title{
-    position: absolute;
-    top: 5vh;
-    right: 0;
-    padding: 3vh 3vw 3vh 2vw;
-    background-color: var(--color-beige);
-    color: white;
-    font-size: clamp(1.5rem, 2vw, 4rem);
-    font-weight: 500;
+.view-img-container img {
+  width: 100%;
 }
 
-.view-content{
-    margin: 1rem 1rem;
-    font-size: clamp(1rem, 1.5vw, 3rem);
-    text-align: center;
+.view-title {
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  padding: 3vh 3vw 3vh 2vw;
+  color: white;
+  font-size: clamp(1.5rem, 2vw, 4rem);
+  font-weight: 500;
+  background-color: var(--color-beige);
+}
+
+.view-content {
+  margin: 1rem 1rem;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  text-align: center;
 }
 
 .view-more-button a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.button-align{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    bottom: 1rem;
+.button-align {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 1rem;
 }
 
-#left{
-    position: absolute;
-    top: 0;
-    bottom: -5rem;
-    left: 0;
-    right: clamp(13rem, 35vw, 130rem);
-    z-index: 90;
-    cursor: pointer;
+#left {
+  position: absolute;
+  top: 0;
+  bottom: -5rem;
+  left: 0;
+  right: clamp(13rem, 35vw, 130rem);
+  z-index: 90;
+  cursor: pointer;
 }
 
-#right{
-    position: absolute;
-    top: 0;
-    bottom: -5rem;
-    left: clamp(13rem, 65vw, 130rem);
-    right: 0;
-    z-index: 90;
-    cursor: pointer;
+#right {
+  position: absolute;
+  top: 0;
+  bottom: -5rem;
+  left: clamp(13rem, 65vw, 130rem);
+  right: 0;
+  z-index: 90;
+  cursor: pointer;
 }
 
-#dots-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 6rem;
-    z-index: 91;
-    /* background-color: brown; */
+#dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 6rem;
+  z-index: 91;
+  margin-top: 2vw;
 }
 
-.dot{
-    height: 4.5rem;
-    width: 4.5rem;
+.dot {
+  height: 4.5rem;
+  width: 4.5rem;
 }
 
-.dot svg{
-    width: 100%;
-    fill: lightgray;
+.dot svg {
+  width: 100%;
+  fill: lightgray;
 }
 
-.dot-active svg{
-    fill: white;
-    transform: scale(1.25);
+.dot-active svg {
+  fill: white;
+  transform: scale(1.25);
 }
 
-@media(width <= 600px){
-    #dots-container{
-        bottom: -0rem;
-        position: absolute;
-    }
+@media (width <= 880px) {
+  #service-text {
+    display: none;
+  }
+  #items-container {
+    left: 50%;
+    right: 50%;
+  }
+  #left {
+    right: 50%;
+  }
+  #right {
+    left: 50%;
+  }
+  .dot svg {
+    width: 150%;
+  }
 }
 
-@media(width > 600px){
-    #dots-container{
-        margin-top: auto;
-        margin-bottom: -10em;
-    }
+@media (width <= 600px) {
+  .dot svg {
+    width: 200%;
+  }
 }
-
-@media(width > 1050px){
-    #dots-container{
-        margin-bottom: -5vw;
-    }
-}
-
-@media(width >= 1800px){
-    #dots-container{
-        margin-bottom: -1vw;
-    }
-}
-
-@media(width >= 2100px){
-    #dots-container{
-        margin-bottom: -18vw;
-    }
-}
-
-@media(width <= 700px){
-    #service-text{
-        display: none;
-    }
-    #scrolling-items-container{
-        left: 50%;
-        right: 50%;
-    }
-    #left{
-        right: 50%;
-    }
-    #right{
-        left: 50%;
-    }
-}
-
-/* .directional-button{
-    width: clamp(4rem, 7vw, 7rem);
-    height: clamp(4rem, 7vw, 7rem);
-    position: absolute;
-    bottom: 50%;
-    background: none;
-    border: solid 0.1rem white;
-    border-radius: 1rem;
-    cursor: pointer;
-    z-index: 50;
-    outline: none;
-}
-
-.directional-button:hover{
-    opacity: 0.8;
-}
-
-.directional-button svg{
-    width: 100%;
-    height: 100%;
-}
-
-#arrow-left{
-    right: clamp(10rem, 20vw, 50%);
-}
-
-#arrow-right{
-    left: clamp(10rem, 20vw, 50%);
-}
-
-#arrow-left svg{
-    transform: rotate(180deg);
-} */

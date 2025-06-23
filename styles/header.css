@@ -25,13 +25,12 @@
   padding-left: 1rem;
   margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   color: white;
   list-style: none;
   font-size: 1.2rem;
-  font-weight: 200;
 }
 
 .header-li {
