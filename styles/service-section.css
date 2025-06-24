@@ -91,9 +91,16 @@
   text-align: center;
 }
 
-.view-more-button a {
+.button-align a {
   color: white;
   text-decoration: none;
+  padding: 1rem 3rem;
+  margin-bottom: 10%;
+  background-color: var(--color-beige);
+  box-shadow: var(--shadow-secondary);
+  border: none;
+  z-index: 151;
+  font-weight: 600;
 }
 
 .button-align {

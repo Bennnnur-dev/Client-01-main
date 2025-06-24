@@ -4,33 +4,33 @@ const services = [
     img: "/images/thumbnails/shipping.jpg",
     content:
       "Understanding the needs of complex technical systems ranging from the most advanced engine room automation systems to high end VSAT communication arays provides reassurance to owners that their assets are being properly and efficiently maintained. ",
-    href: "",
+    href: "/",
   },
   {
     name: "Project Management",
     img: "/images/thumbnails/shipping.jpg",
     content: "",
-    href: "",
+    href: "/",
   },
   {
     name: "Management Service",
     img: "/images/thumbnails/shipping.jpg",
     content:
       "Transparent and efficient managements solutions for your vessel or fleet. CYMS can provide a standard framework management package or tailor a bespoke solution meeting the most demanding of expectations.",
-    href: "",
+    href: "/",
   },
   {
     name: "Recruitment Service",
     img: "/images/thumbnails/shipping.jpg",
     content:
       "Using CYMS's proven candidate-rating system helps to quantify the strengths and weaknesses of each potential new crew member.",
-    href: "",
+    href: "/",
   },
   {
     name: "Audit Service",
     img: "/images/thumbnails/shipping.jpg",
     content: "",
-    href: "",
+    href: "/",
   },
 ];
 
@@ -160,9 +160,7 @@ function generateContainers() {
             <div class="view-title">${service.name}</div>
             <div class="view-content">${service.content}</div>
             <div class="button-align">
-                <button class="view-more-button view-display">
-                    <a href="${service.href}">View more</a>
-                </button>
+                <a href="${service.href}">View more</a>
             </div>
         `;
 
