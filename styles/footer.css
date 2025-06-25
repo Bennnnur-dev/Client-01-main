@@ -69,15 +69,10 @@ hr {
   opacity: 0.5;
 }
 
-#more-info-container {
-  position: absolute;
-  bottom: 0;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#more-info-container div {
-  margin: 1.5rem;
+#copyright {
+  color: white;
+  font-size: clamp(0.8rem, 1vw, 1.5rem);
+  text-align: start;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
 }

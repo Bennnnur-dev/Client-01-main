@@ -1,3 +1,5 @@
+//WARN: this code sucks, and i'm totally aware of it.
+
 const services = [
   {
     name: "Technical Management",
@@ -153,7 +155,7 @@ function generateContainers() {
             <div class="view-title">${service.name}</div>
             <div class="view-content">${service.content}</div>
             <div class="button-align">
-                <a href="${service.href}">View more</a>
+                <a href="${service.href}">View Service</a>
             </div>
         `;
 

@@ -109,6 +109,7 @@
   display: flex;
   justify-content: center;
   bottom: 1rem;
+  z-index: 151;
 }
 
 #left {
@@ -116,7 +117,7 @@
   top: 0;
   bottom: -5rem;
   left: 0;
-  right: clamp(13rem, 35vw, 130rem);
+  right: clamp(13rem, 37vw, 130rem);
   z-index: 90;
   cursor: pointer;
 }
@@ -125,7 +126,7 @@
   position: absolute;
   top: 0;
   bottom: -5rem;
-  left: clamp(13rem, 65vw, 130rem);
+  left: clamp(13rem, 71vw, 130rem);
   right: 0;
   z-index: 90;
   cursor: pointer;
@@ -165,10 +166,10 @@
     right: 50%;
   }
   #left {
-    right: 50%;
+    right: 60%;
   }
   #right {
-    left: 50%;
+    left: 60%;
   }
   .dot svg {
     width: 150%;
