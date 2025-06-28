@@ -31,7 +31,15 @@ const services = [
   {
     name: "Audit Service",
     img: "images/thumbnails/shipping.jpg",
-    content: "",
+    content:
+      "Providing an external and unbiased cost effectiveness analysis, CYMS can help increase the efficiency of any operational management system.",
+    href: "/",
+  },
+  {
+    name: "Training Service",
+    img: "images/thumbnails/shipping.jpg",
+    content:
+      "Using it’s dedicated facilities and network of training partners, CYMS can help increase the productivity of your crew and ensure that they are fully compliant with the latest regulations.",
     href: "/",
   },
 ];
@@ -69,14 +77,14 @@ function navigateByIndex(direction) {
 
   if (direction === "right") {
     index++;
-    if (index >= 5) {
+    if (index > 5) {
       index = 0;
     }
     dots[index].classList.add("dot-active");
   } else {
     index--;
     if (index < 0) {
-      index = 4;
+      index = 5;
     }
     dots[index].classList.add("dot-active");
   }
@@ -85,9 +93,9 @@ function navigateByIndex(direction) {
 
 function animate(index, containers) {
   const targetElement = containers[index];
-  const middleElement = [...containers].filter(
+  const middleElement = [...containers].find(
     container => getComputedStyle(container).getPropertyValue("z-index") === "30"
-  )[0];
+  );
 
   const targetComputedStyles = getComputedStyle(targetElement);
   const middleComputedStyles = getComputedStyle(middleElement);
@@ -109,8 +117,6 @@ function animate(index, containers) {
   targetElement.style.transform = `matrix(1, 0, 0, 1, 0, 0)`;
   targetElement.style.zIndex = 30;
   targetElement.style.filter = "brightness(100%)";
-
-  console.log(index);
 }
 
 function generateContainers() {
@@ -144,6 +150,11 @@ function generateContainers() {
       zIndex = 20;
       size = 0.9;
     } // Audit Service
+    if (index === 5) {
+      spreadingDirection = 10;
+      zIndex = 15;
+      size = 0.85;
+    } // Training Service
 
     const container = document.createElement("article");
     container.classList.add("view-container");

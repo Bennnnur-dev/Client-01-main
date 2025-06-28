@@ -4,6 +4,7 @@ body {
   font-family: Roboto Flex, Arial, Helvetica, sans-serif;
   font-weight: 200;
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 html {
@@ -13,7 +14,6 @@ html {
 p {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 :root {

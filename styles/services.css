@@ -1,41 +1,7 @@
-.hero-background {
-  background-color: var(--color-dark-blue);
-  left: 0;
-  height: 13rem;
+#wavy-border-service {
+  bottom: -8rem;
 }
 
-.hero-title-color {
-  padding-left: 5%;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  background-color: var(--color-white);
-  padding-bottom: 10vw;
-  display: flex;
-  justify-content: center;
-}
-
-main article {
-  width: 50vw;
-}
-
-.service-info-title {
-  font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 4rem);
-}
-
-.service-information p {
-  font-size: clamp(1.5rem, 2vw, 4rem);
-  font-weight: 200;
-  text-align: justify;
-}
-
-#wavy-outline-5 {
-  fill: var(--color-white);
-}
-
-#service-top {
-  margin-top: 10vw;
+.about article p {
+  font-size: 2rem;
 }

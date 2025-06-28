@@ -7,12 +7,11 @@ footer {
 }
 
 footer article {
-  margin-top: 10vw;
-  height: 60%;
+  margin-top: 3vw;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  padding-bottom: clamp(10rem, 10vw, 60rem);
+  padding-bottom: 5vw;
   z-index: 10;
 }
 
@@ -24,14 +23,14 @@ footer article ul {
 
 .list-title {
   color: rgb(103, 103, 103);
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: 1.7rem;
   margin-bottom: 1.5rem;
 }
 
 .list-content {
   color: white;
   margin-bottom: 1rem;
-  font-size: clamp(1rem, 2vw, 5rem);
+  font-size: 1.2rem;
   width: 100%;
   z-index: 50;
 }
@@ -58,7 +57,7 @@ footer article ul {
 #company-description-li {
   color: white;
   margin-top: 1rem;
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: 1.2rem;
 }
 
 hr {
@@ -71,7 +70,7 @@ hr {
 
 #copyright {
   color: white;
-  font-size: clamp(0.8rem, 1vw, 1.5rem);
+  font-size: 1.2rem;
   text-align: start;
   margin-left: 2rem;
   padding-bottom: 2rem;
