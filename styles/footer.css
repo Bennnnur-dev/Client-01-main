@@ -4,18 +4,15 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-footer article {
-  margin-top: 3vw;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  padding-bottom: 5vw;
+  padding-bottom: 3vw;
+  padding-top: 3vw;
   z-index: 10;
 }
 
-footer article ul {
+footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -58,20 +55,4 @@ footer article ul {
   color: white;
   margin-top: 1rem;
   font-size: 1.2rem;
-}
-
-hr {
-  margin-bottom: 2rem;
-  position: absolute;
-  bottom: 3rem;
-  width: 100%;
-  opacity: 0.5;
-}
-
-#copyright {
-  color: white;
-  font-size: 1.2rem;
-  text-align: start;
-  margin-left: 2rem;
-  padding-bottom: 2rem;
 }

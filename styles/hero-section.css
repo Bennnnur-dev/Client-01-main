@@ -60,17 +60,11 @@
   background: none;
   border: 0.1rem solid white;
   border-radius: 1rem;
-  padding: clamp(0.5rem, 0.7vw, 3rem) clamp(2rem, 2vw, 10rem);
+  padding: 0.5rem clamp(2rem, 2vw, 10rem);
   color: white;
   font-size: clamp(1rem, 1vw, 3rem);
   box-shadow: var(--shadow-secondary);
   cursor: pointer;
-}
-
-#hero-section-CTA a {
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
 }
 
 #hero-section-CTA:hover {

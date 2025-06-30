@@ -97,7 +97,6 @@ nav a {
 
 #sidebar-ul {
   padding: 0 1rem 1rem 1rem;
-  margin-top: 3.5rem;
   position: relative;
   width: 100%;
 }
@@ -116,14 +115,18 @@ nav a {
   color: white;
 }
 
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 #exit-sidebar {
   background: none;
   border: none;
   font-size: 1.2rem;
-  position: absolute;
-  left: 1rem;
-  top: -2rem;
   color: white;
+  margin: 1rem 0 0 1rem;
 }
 
 #sidebar-ul hr {

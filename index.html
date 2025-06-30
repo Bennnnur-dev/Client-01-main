@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="ComYacht description here." />
     <title>ComYacht</title>
 
     <!--Fonts-->
@@ -33,15 +34,15 @@
         <ul id="header-ul-flex">
           <li id="company-info" class="header-li">
             <div class="logo-container">
-              <a href="">
-                <img class="header-logo" src="./images/logos-icons/Client-01-logo.png" alt="Logo" />
+              <a href="index.html">
+                <img class="header-logo" src="./images/logos-icons/Client-01-logo.png" alt="ComYacht logo" />
               </a>
             </div>
-            <a id="company-title" href="">ComYacht</a>
+            <a href="index.html">ComYacht</a>
           </li>
           <li class="header-li" id="header-tabs">
             <div id="service-tab">
-              Services
+              <span>Services</span>
               <div id="service-placeholder"></div>
               <ul id="scroll-tab">
                 <li><a href="technical.html">Technical Management</a></li>
@@ -62,27 +63,21 @@
           </li>
         </ul>
 
-        <nav id="sidebar">
+        <aside id="sidebar">
+          <button id="exit-sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+            </svg>
+          </button>
           <ul id="sidebar-ul">
-            <button id="exit-sidebar">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e8eaed"
-              >
-                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-              </svg>
-            </button>
             <li>
-              Services
+              <span>Services</span>
               <hr />
             </li>
             <li>
               <ul id="sidebar-services">
                 <li><a href="technical.html">Technical Management</a></li>
-                <li><a href="yacht.html">Yacht agency services</a></li>
+                <li><a href="yacht.html">Yacht agency Service</a></li>
                 <li><a href="management.html">Management Service</a></li>
                 <li><a href="recruitment.html">Recruitment Service</a></li>
                 <li><a href="audit.html">Audit Service</a></li>
@@ -98,7 +93,7 @@
               <hr />
             </li>
           </ul>
-        </nav>
+        </aside>
       </nav>
     </header>
 
@@ -108,10 +103,10 @@
           <h1 class="hero-section-title">Management Reinvented</h1>
           <blockquote class="hero-section-subtitle">"Efficiency is doing better what is already being done"</blockquote>
           <p class="quote-author">Peter Drucker</p>
-          <button id="hero-section-CTA"><a href="#service-section">Our Services</a></button>
+          <a id="hero-section-CTA" href="#service-section">Our Services</a>
         </div>
         <div class="hero-section-img-container">
-          <img src="./images/thumbnails/Nature-Images-hd.jpg" alt="Thumbnail" />
+          <img src="./images/thumbnails/Nature-Images-hd.jpg" alt="Page thumbnail" />
         </div>
       </section>
 
@@ -127,12 +122,12 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, provident? Lorem, ipsum dolor sit amet
             consectetur adipisicing elit. Fuga, reprehenderit.
           </p>
-          <a class="view-more-about" href="/">View more</a>
+          <a class="view-more-about" href="index.html">View more</a>
         </article>
         <article class="summary-info">
           <h3>Where to find us</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellat?</p>
-          <a class="view-more-about" href="/">View more</a>
+          <a class="view-more-about" href="index.html">View more</a>
         </article>
         <article class="summary-info">
           <h3>Our goals</h3>
@@ -140,12 +135,12 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure similique itaque magni laboriosam. Unde,
             iusto nemo vero tempore quaerat sint?
           </p>
-          <a class="view-more-about" href="/">View more</a>
+          <a class="view-more-about" href="index.html">View more</a>
         </article>
         <article class="summary-info">
           <h3>title</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem quasi eligendi porro ratione at?</p>
-          <a class="view-more-about" href="/">View more</a>
+          <a class="view-more-about" href="index.html">View more</a>
         </article>
       </section>
 
@@ -207,47 +202,41 @@
     </main>
 
     <footer>
-      <article>
-        <ul id="company-main-info">
-          <li id="company-img-footer">
-            <div class="logo-container">
-              <a href="">
-                <img class="header-logo" src="./images/logos-icons/Client-01-logo.png" alt="Logo" />
-              </a>
-            </div>
-          </li>
-          <li id="footer-company-li">
-            <a id="company-title" href="">ComYacht</a>
-          </li>
-          <li id="company-description-li">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, vitae? Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Nostrum ipsum iure excepturi assumenda sunt, obcaecati non sequi modi nisi?
-              Incidunt sint.
-            </p>
-          </li>
-        </ul>
-        <ul id="company-services">
-          <li class="list-title">SERVICES</li>
-          <li class="list-content"><a href="technical.html">Technical Management</a></li>
-          <li class="list-content"><a href="/yacht.html">Yacht Agency Service</a></li>
-          <li class="list-content"><a href="management.html">Management Service</a></li>
-          <li class="list-content"><a href="recruitment.html">Recruitment Service</a></li>
-          <li class="list-content"><a href="audit.html">Audit Service</a></li>
-          <li class="list-content"><a href="training.html">Training Service</a></li>
-        </ul>
-        <ul id="company-about">
-          <li class="list-title">ABOUT</li>
-          <li class="list-content"><a href="about.html">About us</a></li>
-        </ul>
-        <ul id="company-contact">
-          <li class="list-title">CONTACT</li>
-          <li class="list-content"><a href="contact.html">Contact information</a></li>
-        </ul>
-      </article>
-      <hr />
-
-      <p id="copyright">&copy;2025 ComYacht</p>
+      <ul id="company-main-info">
+        <li id="company-img-footer">
+          <div class="logo-container">
+            <a href="index.html">
+              <img class="header-logo" src="./images/logos-icons/Client-01-logo.png" alt="Comyacht logo" />
+            </a>
+          </div>
+        </li>
+        <li id="footer-company-li">
+          <a href="index.html">ComYacht</a>
+        </li>
+        <li id="company-description-li">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, vitae? Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Nostrum ipsum iure excepturi assumenda sunt, obcaecati non sequi modi nisi? Incidunt sint.
+          </p>
+        </li>
+      </ul>
+      <ul id="company-services">
+        <li class="list-title"><span>SERVICES</span></li>
+        <li class="list-content"><a href="technical.html">Technical Management</a></li>
+        <li class="list-content"><a href="/yacht.html">Yacht Agency Service</a></li>
+        <li class="list-content"><a href="management.html">Management Service</a></li>
+        <li class="list-content"><a href="recruitment.html">Recruitment Service</a></li>
+        <li class="list-content"><a href="audit.html">Audit Service</a></li>
+        <li class="list-content"><a href="training.html">Training Service</a></li>
+      </ul>
+      <ul id="company-about">
+        <li class="list-title"><span>ABOUT</span></li>
+        <li class="list-content"><a href="about.html">About us</a></li>
+      </ul>
+      <ul id="company-contact">
+        <li class="list-title"><span>CONTACT</span></li>
+        <li class="list-content"><a href="contact.html">Contact information</a></li>
+      </ul>
     </footer>
   </body>
 </html>
