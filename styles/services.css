@@ -5,3 +5,9 @@
 .about article p {
   font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+  .about article p {
+    font-size: 1.3rem;
+  }
+}

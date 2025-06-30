@@ -10,7 +10,7 @@
 
 .contact article {
   box-shadow: var(--shadow-secondary);
-  background-color: var(--color-beige);
+  background-color: var(--color-cyan);
   width: 25vw;
   color: white;
   padding: 1rem;
